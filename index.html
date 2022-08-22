@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+    <script>
+        //-------------------------------------------------
+
+
+        window.onload = function () {
+
+            // $(".loader_container").css("display", "none");
+            // $(".bar_container").css("display", "block");
+            // $("#primary").css("display", "block");
+            // $(".containt").css("display", "block");
+
+
+            Swal.fire({
+                icon: 'success',
+                title: 'Welcome',
+                html: ' Stay Safe 😊  <br>🧼 Wear Mask 😷',
+                footer: '&copy All rights reserved by Rishu.S !'
+            });
+        }
+        function warning() {
+            Swal.fire({
+                icon: 'error',
+                title: 'Sorry for inconvenience',
+                html: 'This Page under maintenance jald hi post add kr duga tb tak ke liye stay connected✌️',
+                footer: 'Stay Safe!😊😊 || 🧼 Wear Mask 😷'
+            });
+        }
+        function warningNav() {
+            Swal.fire({
+                icon: 'error',
+                title: 'Sorry for inconvenience',
+                html: "This Page under maintenance! I'm glad U R here! We'll updated our code soon. Stay connected✌️",
+                footer: 'Stay Safe!😊😊 || 🧼 Wear Mask 😷'
+            });
+        }
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./main.js"></script>
+</head>
+
+<body class="light">
+    <!--  -->
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <header class="container m-auto px-5 sm:px-12 md:px-20 max-w-screen-xl h-24 md:h-32 overflow-hidden">
+                <nav onclick="warningNav()" class="mt-auto h-full flex space-x-6 items-center justify-center md:justify-start text-sm"
+                    aria-label="Main Navigation"><a aria-current="page" aria-label="Website logo, go back to homepage."
+                        class="" href="#logo" onclick="warningNav()">
+                        <div style="transform: none;"><svg
+                                class="h-12 sm:h-10 w-12 sm:w-10 fill-current hover:text-accent transition duration-150"
+                                viewBox="0 0 530 373" version="1.1">
+                                <g>
+                                    <path
+                                        d="M 165.43536376953125 184.79586791992188 C 164.47537231445312 185.74920654296875 163.56869506835938 186.19253540039062 162.71536254882812 186.12586975097656 C 161.86203002929688 186.0592041015625 161.17869567871094 185.71920776367188 160.6653594970703 185.10586547851562 C 160.15203857421875 184.48587036132812 159.80870056152344 183.66253662109375 159.63536071777344 182.6358642578125 C 159.4687042236328 181.61585998535156 159.65869140625 180.592529296875 160.2053680419922 179.5658721923828 L 166.76536560058594 151.97586059570312 C 165.60536193847656 150.6092071533203 164.1186981201172 149.10586547851562 162.30535888671875 147.4658660888672 C 160.49203491210938 145.82586669921875 158.71536254882812 144.15252685546875 156.97537231445312 142.44586181640625 C 155.22869873046875 140.73919677734375 153.63870239257812 139.01254272460938 152.2053680419922 137.265869140625 C 150.77203369140625 135.52586364746094 149.8820343017578 133.86920166015625 149.53536987304688 132.29586791992188 C 149.53536987304688 130.515869140625 150.4586944580078 129.62586975097656 152.30535888671875 129.62586975097656 C 153.46536254882812 129.41920471191406 154.40536499023438 129.5225372314453 155.1253662109375 129.9358673095703 C 155.84536743164062 130.342529296875 156.47869873046875 130.939208984375 157.02536010742188 131.72586059570312 C 157.57203674316406 132.51254272460938 158.13536071777344 133.48919677734375 158.71536254882812 134.65586853027344 C 159.2953643798828 135.8158721923828 160.01202392578125 137.0092010498047 160.8653564453125 138.23587036132812 C 161.72537231445312 139.46920776367188 162.81869506835938 140.71920776367188 164.14537048339844 141.98587036132812 C 165.47869873046875 143.24586486816406 167.2053680419922 144.3892059326172 169.3253631591797 145.41586303710938 C 169.7386932373047 144.255859375 170.1153564453125 142.3925323486328 170.4553680419922 139.82586669921875 C 170.7953643798828 137.265869140625 171.08535766601562 134.53253173828125 171.3253631591797 131.62586975097656 C 171.56536865234375 128.71920776367188 171.75537109375 125.83253479003906 171.89537048339844 122.96586608886719 C 172.02870178222656 120.092529296875 172.09536743164062 117.73252868652344 172.09536743164062 115.8858642578125 C 172.30203247070312 115.61253356933594 172.72869873046875 115.38920593261719 173.3753662109375 115.21586608886719 C 174.02870178222656 115.04920196533203 174.73202514648438 114.98252868652344 175.48536682128906 115.015869140625 C 176.23202514648438 115.04920196533203 176.9153594970703 115.18586730957031 177.53536987304688 115.42587280273438 C 178.14869689941406 115.66586303710938 178.52203369140625 116.02586364746094 178.65536499023438 116.50586700439453 C 179.0020294189453 119.44586181640625 178.9520263671875 122.33253479003906 178.50537109375 125.16586303710938 C 178.05870056152344 128.005859375 177.51202392578125 130.842529296875 176.8653564453125 133.67587280273438 C 176.2187042236328 136.515869140625 175.6220245361328 139.33587646484375 175.0753631591797 142.1358642578125 C 174.52870178222656 144.94253540039062 174.39202880859375 147.77920532226562 174.6653594970703 150.6458740234375 L 192.9153594970703 169.005859375 C 192.98202514648438 169.07254028320312 193.08203125 169.3458709716797 193.21536254882812 169.82586669921875 C 193.35536193847656 170.2991943359375 193.4253692626953 170.6392059326172 193.4253692626953 170.8458709716797 C 193.4253692626953 171.2592010498047 193.39202880859375 171.66920471191406 193.3253631591797 172.07586669921875 C 193.2520294189453 172.48919677734375 193.09869384765625 172.88253784179688 192.8653564453125 173.25587463378906 C 192.6253662109375 173.6358642578125 192.31536865234375 173.92587280273438 191.93536376953125 174.12586975097656 C 191.56202697753906 174.33253479003906 191.06869506835938 174.40252685546875 190.4553680419922 174.3358612060547 C 189.56202697753906 173.37586975097656 188.44869995117188 172.19586181640625 187.1153564453125 170.79586791992188 C 185.7820281982422 169.3958740234375 184.33203125 167.92587280273438 182.76536560058594 166.3858642578125 C 181.19203186035156 164.8458709716797 179.58535766601562 163.3592071533203 177.9453582763672 161.92587280273438 C 176.30535888671875 160.49253845214844 174.73202514648438 159.36587524414062 173.22537231445312 158.54586791992188 L 172.71536254882812 158.54586791992188 L 172.60536193847656 158.4358673095703 C 172.26536560058594 158.4358673095703 171.9586944580078 158.62586975097656 171.68536376953125 159.005859375 C 171.4120330810547 159.3791961669922 171.05203247070312 160.439208984375 170.60536193847656 162.1858673095703 C 170.1653594970703 163.92587280273438 169.55203247070312 166.5558624267578 168.76536560058594 170.07586669921875 C 167.97869873046875 173.5958709716797 166.8686981201172 178.50253295898438 165.43536376953125 184.79586791992188 ZM 211.98597717285156 176.3858642578125 C 211.98597717285156 175.01919555664062 212.8393096923828 173.2592010498047 214.54598999023438 171.10586547851562 C 216.25930786132812 168.95252990722656 218.3793182373047 166.5092010498047 220.90597534179688 163.77586364746094 C 223.43264770507812 161.04254150390625 226.20265197753906 158.06919860839844 229.2159881591797 154.85586547851562 C 232.22265625 151.6425323486328 234.98931884765625 148.3092041015625 237.5159912109375 144.85586547851562 C 240.0426483154297 141.40252685546875 242.16265869140625 137.88253784179688 243.8759765625 134.29586791992188 C 245.5826416015625 130.70252990722656 246.43597412109375 127.16253662109375 246.43597412109375 123.67587280273438 C 246.43597412109375 121.83586883544922 245.9226531982422 120.24919891357422 244.89598083496094 118.91586303710938 C 243.8759765625 117.58253479003906 242.56265258789062 116.43586730957031 240.9559783935547 115.47586822509766 C 239.3493194580078 114.52253723144531 237.53598022460938 113.77253723144531 235.5159912109375 113.22586822509766 C 233.50265502929688 112.67253112792969 231.4693145751953 112.2425308227539 229.41598510742188 111.93586730957031 C 227.36265563964844 111.62920379638672 225.41598510742188 111.42586517333984 223.57598876953125 111.32586669921875 C 221.72930908203125 111.21920013427734 220.15597534179688 111.1658706665039 218.85598754882812 111.1658706665039 C 218.5159912109375 111.1658706665039 218.07264709472656 111.18586730957031 217.52598571777344 111.22586822509766 C 216.97930908203125 111.25920104980469 216.4126434326172 111.29253387451172 215.82598876953125 111.32586669921875 C 215.24598693847656 111.35919952392578 214.7159881591797 111.4092025756836 214.23597717285156 111.47586822509766 C 213.7626495361328 111.54253387451172 213.48931884765625 111.57586669921875 213.41598510742188 111.57586669921875 L 212.0859832763672 112.80587005615234 C 212.0859832763672 112.94586944580078 212.06932067871094 113.5291976928711 212.03598022460938 114.55586242675781 C 212.00265502929688 115.58253479003906 211.9693145751953 116.74253845214844 211.93597412109375 118.0358657836914 C 211.90264892578125 119.33586883544922 211.885986328125 120.66920471191406 211.885986328125 122.0358657836914 L 211.885986328125 125.21586608886719 C 211.885986328125 132.12252807617188 212.1426544189453 138.97586059570312 212.65597534179688 145.77586364746094 C 213.1626434326172 152.57586669921875 213.41598510742188 159.42919921875 213.41598510742188 166.3358612060547 C 213.41598510742188 166.74920654296875 213.43597412109375 167.19253540039062 213.47598266601562 167.66586303710938 C 213.50930786132812 168.1458740234375 213.48931884765625 168.6092071533203 213.41598510742188 169.0558624267578 C 213.3493194580078 169.49586486816406 213.1626434326172 169.87252807617188 212.85598754882812 170.1858673095703 C 212.54931640625 170.49253845214844 212.0893096923828 170.6458740234375 211.47598266601562 170.6458740234375 C 211.06265258789062 170.6458740234375 210.65264892578125 170.54254150390625 210.24598693847656 170.3358612060547 C 209.8326416015625 170.1291961669922 209.5926513671875 169.78587341308594 209.52598571777344 169.3058624267578 L 205.52598571777344 115.37586975097656 C 205.31932067871094 115.50920104980469 204.95932006835938 115.69586181640625 204.44598388671875 115.93586730957031 C 203.93264770507812 116.17587280273438 203.40264892578125 116.43253326416016 202.85598754882812 116.70587158203125 C 202.30931091308594 116.97920227050781 201.77931213378906 117.26919555664062 201.26597595214844 117.57586669921875 C 200.75265502929688 117.88253784179688 200.4293212890625 118.0358657836914 200.29598999023438 118.0358657836914 C 200.22930908203125 118.0358657836914 200.10931396484375 118.05586242675781 199.9359893798828 118.09587097167969 C 199.7626495361328 118.12919616699219 199.6426544189453 118.14586639404297 199.57598876953125 118.14586639404297 C 199.23597717285156 118.14586639404297 198.8426513671875 118.0592041015625 198.39598083496094 117.8858642578125 C 197.9559783935547 117.71253967285156 197.73597717285156 117.31919860839844 197.73597717285156 116.70587158203125 C 197.73597717285156 115.67919921875 197.9559783935547 114.842529296875 198.39598083496094 114.19586944580078 C 198.8426513671875 113.54920196533203 199.4259796142578 112.94920349121094 200.14598083496094 112.39586639404297 C 200.85931396484375 111.84919738769531 201.6259765625 111.30253601074219 202.44598388671875 110.75586700439453 C 203.26597595214844 110.20919799804688 204.03598022460938 109.50920104980469 204.7559814453125 108.65586853027344 C 205.47598266601562 107.80253601074219 206.0559844970703 106.72586822509766 206.49598693847656 105.42586517333984 C 206.94264221191406 104.12586975097656 207.16598510742188 102.48587036132812 207.16598510742188 100.50586700439453 C 208.53265380859375 100.50586700439453 209.385986328125 100.74586486816406 209.72598266601562 101.22586822509766 C 210.07264709472656 101.70586395263672 210.27931213378906 102.26920318603516 210.34597778320312 102.9158706665039 C 210.4126434326172 103.56253051757812 210.49598693847656 104.21253204345703 210.59597778320312 104.8658676147461 C 210.70265197753906 105.51253509521484 211.19931030273438 105.9725341796875 212.0859832763672 106.24586486816406 C 213.9993133544922 106.17919921875 216.3059844970703 106.17919921875 219.0059814453125 106.24586486816406 C 221.7059783935547 106.31919860839844 224.5426483154297 106.54253387451172 227.5159912109375 106.9158706665039 C 230.48931884765625 107.28919982910156 233.4293212890625 107.85253143310547 236.3359832763672 108.60586547851562 C 239.24264526367188 109.35919952392578 241.83932495117188 110.41919708251953 244.1259765625 111.7858657836914 C 246.4193115234375 113.15253448486328 248.23265075683594 114.87919616699219 249.56597900390625 116.96586608886719 C 250.89932250976562 119.05253601074219 251.49598693847656 121.59919738769531 251.35598754882812 124.60586547851562 C 250.4693145751953 129.86587524414062 248.77931213378906 134.9225311279297 246.28598022460938 139.77586364746094 C 243.7926483154297 144.6291961669922 240.85264587402344 149.29586791992188 237.4659881591797 153.77586364746094 C 234.07931518554688 158.255859375 230.4226531982422 162.54586791992188 226.49598693847656 166.6458740234375 C 222.56265258789062 170.74586486816406 218.64932250976562 174.67587280273438 214.7559814453125 178.4358673095703 C 214.68264770507812 178.4358673095703 214.57931518554688 178.45252990722656 214.44598388671875 178.48587036132812 C 214.3059844970703 178.51919555664062 214.20265197753906 178.53587341308594 214.135986328125 178.53587341308594 C 213.52264404296875 178.53587341308594 213.00930786132812 178.33253479003906 212.59597778320312 177.92587280273438 C 212.18931579589844 177.5125274658203 211.98597717285156 176.99920654296875 211.98597717285156 176.3858642578125 Z"
+                                        transform="matrix(5.211760564043537, -1.166412387664627, 0.7483008086083467, 3.3435555774191674, -881.1998926324001, -62.32771901739011)">
+                                    </path>
+                                </g>
+                            </svg></div>
+                    </a>
+                    <span class="flex flex-grow items-center space-x-6"><a aria-current="page" title="Home" class=""
+                            href="#home"><span
+                                class="font-normal uppercase text-base hover:text-accent transition duration-150 text-accent">Home</span></a><a
+                            title="About" href="#about"><span
+                                class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary">About</span></a><a
+                            title="Blog" href="#blog"><span
+                                class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary">Blog</span></a></span>
+                    <div style="transform: none;" ><button aria-label="Toggle Dark Mode" title="Toggle Dark Mode"
+                            class="block hover:text-accent transition duration-150 focus:outline-none"><svg
+                                alt="Dark mode" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-moon" id="theme-button">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg></button></div>
+                </nav>
+                <div class="hidden sm:block">
+                    <div class="-mt-120 ml-4">
+                        <div aria-hidden="true">
+                            <div class="blob-bg absolute"><svg
+                                    class="block m-auto blob-rotate h-64 text-fill-secondary fill-current"
+                                    viewBox="0 0 715 693" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M359.408 0.499261C434.083 0.69572 509.059 15.4608 570.136 58.4268C631.828 101.825 675.247 166.543 697.772 238.528C720.119 309.946 720.46 387.141 695.015 457.515C670.121 526.365 618.875 581.064 558.794 622.901C499.694 664.055 431.329 687.499 359.408 691.212C284.339 695.087 205.553 688.115 144.481 644.291C83.2293 600.338 54.1113 526.936 30.6392 455.293C7.11277 383.484 -10.9409 307.559 10.4113 235.074C32.1072 161.421 84.1477 100.148 147.872 57.3159C209.988 15.5657 284.566 0.302364 359.408 0.499261Z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="container m-auto px-5 mt-16 sm:px-12 md:px-20 max-w-screen-xl"
+                style="min-height: calc(100vh - 23rem);">
+                <div class="mt-12 flex flex-col-reverse lg:flex-row items-center lg:justify-between lg:space-x-6">
+                    <div class="mt-12 lg:mt-0 max-w-3xl text-primary">
+                        <p class="text-3xl sm:text-4xl font-semibold text-center lg:text-left"
+                            style="opacity: 1; transform: none;">
+                            Hey <span role="img" aria-label="Victory Hand">✌️</span><span role="img"
+                                aria-label="Beaming Face">😁</span>, I’m <a
+                                class="text-accent hover:underline transition duration-150" href="#about">Ashutosh</a>
+                        </p>
+                        <p class="text-xl sm:text-2xl text-center lg:text-left" style="opacity: 1; transform: none;">
+                            <span class="line-through">Student</span> · Software Developer
+                        </p>
+                    
+                        <div
+                            class="mt-10 justify-center lg:justify-start text-accent flex flex-row items-center space-x-4">
+                            <span style="opacity: 1;"><a href="mailto:ashutosh.soft.nic@gmail.com"
+                                    title="ashutosh.soft.nic@gmail.com" aria-label="email" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <div style="transform: none;"><svg alt="mail" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg></div>
+                                </a></span><span style="opacity: 1;"><a href="https://github.com/gitx-ashu"
+                                    title="gitx-ashu" aria-label="github" target="_blank" rel="noopener noreferrer">
+                                    <div style="transform: none;"><svg alt="github" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-github">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg></div>
+                                </a></span><span style="opacity: 1;"><a href="#" title="adding soon"
+                                    aria-label="linkedin" target="_blank" rel="noopener noreferrer">
+                                    <div style="transform: none;"><svg alt="linkedin" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-linkedin">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg></div>
+                                </a></span><span style="opacity: 1;"><a href="https://www.instagram.com/igx_chauhan/"
+                                    title="ashutosh.js" aria-label="instagram" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <div style="transform: none;"><svg alt="instagram" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-instagram">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg></div>
+                                </a></span>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity: 1;">
+                        <div aria-hidden="true">
+                            <div class="relative blob h-48 md:h-56 lg:h-64"><svg
+                                    class="blob-rotate-faster h-full text-fill-primary fill-current"
+                                    viewBox="0 0 278 279" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M137.896 0.127761C167.59 -0.638578 198.383 1.62824 222.877 18.4301C247.738 35.4836 263.129 63.014 271.706 91.9151C280.118 120.258 280.513 150.661 270.364 178.43C260.457 205.538 239.342 225.92 216.353 243.372C192.903 261.174 167.336 278.631 137.896 278.994C108.28 279.358 81.0666 263.928 58.0226 245.322C35.8955 227.455 20.5343 203.415 11.0775 176.594C1.41508 149.191 -4.23875 119.749 3.91245 91.8587C12.2111 63.4638 31.6331 39.4483 56.0438 22.7357C79.9856 6.34414 108.89 0.876363 137.896 0.127761Z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                        <div class="absolute w-full h-full top-0 flex items-center justify-center">
+                            <div class="h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 rounded-full overflow-hidden">
+                                <div class=" gatsby-image-wrapper" style="position: relative; overflow: hidden;">
+                                    <div aria-hidden="true" style="width: 100%; padding-bottom: 100%;">
+                                    <img src="./assets/profile.jpeg" alt="ProfilePicutre">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-20" style="opacity: 1;">
+                    <section>
+                        <h2 class="mt-64 font-normal text-accent tracking-widestest uppercase">Latest posts</h2>
+                        <ul class="mt-3 divide-y divide-subtle" onclick="warning()">
+                            <li class="py-3">
+                                <div class="-mx-5 -my-3 px-5 py-3 hover:bg-secondary">
+                                    <div><a href="#">
+                                            <h3 class="my-2 text-xl font-semibold hover:text-accent"
+                                                onclick="warning()">Ranked up as Elite
+                                                Hacker in Hack the Box
+                                            </h3>
+                                        </a>
+                                        <h4 class="my-2 font-normal text-tertiary">I rooted the 15th active box in Hack
+                                            the Box and rank up
+                                            as Elite Hacker</h4>
+                                    </div>
+                                    <div
+                                        class="mt-4 flex flex-col sm:flex-row sm:justify-between sm:items-end hover:bg-secondary">
+                                        <div class="my-1 sm:my-2 text-tertiary"><svg class="inline-block mb-1 mr-1"
+                                                width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>Feb 08, 2020</div>
+                                        <div class="my-2"><svg class="inline-block mb-1 text-accent" width="16"
+                                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <line x1="4" y1="9" x2="20" y2="9"></line>
+                                                <line x1="4" y1="15" x2="20" y2="15"></line>
+                                                <line x1="10" y1="3" x2="8" y2="21"></line>
+                                                <line x1="16" y1="3" x2="14" y2="21"></line>
+                                            </svg><span><a class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">hackthebox</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3">
+                                <div class="-mx-5 -my-3 px-5 py-3 hover:bg-secondary">
+                                    <div><a href="#">
+                                            <h3 class="my-2 text-xl font-semibold hover:text-accent">Hack the Box -
+                                                Swagshop</h3>
+                                        </a>
+                                        <h4 class="my-2 font-normal text-tertiary">Walkthrough of Hack the Box machine:
+                                            Help</h4>
+                                    </div>
+                                    <div
+                                        class="mt-4 flex flex-col sm:flex-row sm:justify-between sm:items-end hover:bg-secondary">
+                                        <div class="my-1 sm:my-2 text-tertiary"><svg class="inline-block mb-1 mr-1"
+                                                width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>Sep 28, 2019</div>
+                                        <div class="my-2"><svg class="inline-block mb-1 text-accent" width="16"
+                                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <line x1="4" y1="9" x2="20" y2="9"></line>
+                                                <line x1="4" y1="15" x2="20" y2="15"></line>
+                                                <line x1="10" y1="3" x2="8" y2="21"></line>
+                                                <line x1="16" y1="3" x2="14" y2="21"></line>
+                                            </svg><span><a class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">hackthebox</a>,</span><span><a
+                                                    class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">writeup</a>,</span><span><a
+                                                    class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">magento</a>,</span><span><a
+                                                    class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">gtfobin</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3">
+                                <div class="-mx-5 -my-3 px-5 py-3 hover:bg-secondary">
+                                    <div><a href="#">
+                                            <h3 class="my-2 text-xl font-semibold hover:text-accent">Hack the Box - Luke
+                                            </h3>
+                                        </a>
+                                        <h4 class="my-2 font-normal text-tertiary">Walkthrough of Hack the Box machine:
+                                            Luke</h4>
+                                    </div>
+                                    <div
+                                        class="mt-4 flex flex-col sm:flex-row sm:justify-between sm:items-end hover:bg-secondary">
+                                        <div class="my-1 sm:my-2 text-tertiary"><svg class="inline-block mb-1 mr-1"
+                                                width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>Sep 14, 2019</div>
+                                        <div class="my-2"><svg class="inline-block mb-1 text-accent" width="16"
+                                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <line x1="4" y1="9" x2="20" y2="9"></line>
+                                                <line x1="4" y1="15" x2="20" y2="15"></line>
+                                                <line x1="10" y1="3" x2="8" y2="21"></line>
+                                                <line x1="16" y1="3" x2="14" y2="21"></line>
+                                            </svg><span><a class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">hackthebox</a>,</span><span><a
+                                                    class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">writeup</a>,</span><span><a
+                                                    class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">freebsd</a>,</span><span><a
+                                                    class="ml-1 hover:underline hover:text-accent"
+                                                    href="#">agenti</a></span></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            <footer class="relative w-full text-secondary overflow-hidden bg-secondary">
+                <div class="container h-full md:max-w-screen-md lg:max-w-screen-xl m-auto px-5 md:px-20 pb-10 pt-16">
+                    <div class="container flex-col justify-between md:space-y-8">
+                        <nav
+                            class="hidden md:flex flex-row items-center space-x-6 justify-center md:justify-end text-xs">
+                            <a aria-current="page" title="Home" class="" href="#"><span
+                                    class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary"><span
+                                        class="lowercase">/home</span></span></a><a title="Blog" href="#"><span
+                                    class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary"><span
+                                        class="lowercase">/blog</span></span></a><a title="Skill" href="#"><span
+                                    class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary"><span
+                                        class="lowercase">/skills</span></span></a><a title="About" href="#"><span
+                                    class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary"><span
+                                        class="lowercase">/about</span></span></a>
+                        </nav>
+                        <div
+                            class="flex flex-col-reverse md:flex-row md:justify-between space-y-reverse space-y-8 md:space-y-0">
+                            <div class="sl-footer-links__copyright">Made with<div class="sl-footer-links__heart-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                                        width="22" height="22" class="sol-icon">
+                                        <g id="icon-heart">
+                                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.54154 5.54154C5.59693 3.48615 8.92938 3.48615 10.9848 5.54154L12 6.55677L13.0152 5.54154C15.0706 3.48615 18.4031 3.48615 20.4585 5.54154C22.5138 7.59693 22.5138 10.9294 20.4585 12.9848L12.3536 21.0897C12.1583 21.2849 11.8417 21.2849 11.6464 21.0897L3.54154 12.9848C1.48615 10.9294 1.48615 7.59693 3.54154 5.54154Z"
+                                                fill="currentColor"></path>
+                                        </g>
+                                    </svg>
+                                </div>by &nbsp;<span class="sl-footer-links__marked-text">Rishu</span>&nbsp;| ©2021
+                            </div>
+                            <nav
+                                class="flex md:hidden flex-row items-center space-x-6 justify-center md:justify-end text-xs">
+                                <a aria-current="page" title="Home" class="" href="#"><span
+                                        class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary"><span
+                                            class="lowercase">/home</span></span></a><a title="Blog" href="#"><span
+                                        class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary"><span
+                                            class="lowercase">/blog</span></span></a><a title="Skill" href="#"><span
+                                        class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary"><span
+                                            class="lowercase">/skills</span></span></a><a title="About" href="#"><span
+                                        class="font-normal uppercase text-base hover:text-accent transition duration-150 text-secondary"><span
+                                            class="lowercase">/about</span></span></a>
+                            </nav>
+                            <div class="flex flex-row items-center space-x-4 justify-center md:justify-end"><span><a
+                                        href="mailto:ashutosh.soft.nic@gmail.com" title="most welcome dear"
+                                        aria-label="email" target="_blank" rel="noopener noreferrer"
+                                        class="hover:text-accent"><svg alt="mail" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg></a></span><span><a href="https://github.com/gitx-ashu#" title="gitx-ashu" aria-label="github"
+                                        target="_blank" rel="noopener noreferrer" class="hover:text-accent"><svg
+                                            alt="github" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-github">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg></a></span><span><a href="#" title="adding soon" aria-label="linkedin"
+                                        rel="noopener noreferrer" class="hover:text-accent"><svg
+                                            alt="linkedin" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-linkedin">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg></a></span><span><a href="https://instagram.com/igx_chauhan" title="igx_chauhan
+                                            " aria-label="instagram"
+                                        target="_blank" rel="noopener noreferrer" class="hover:text-accent"><svg
+                                            alt="instagram" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-instagram">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg></a></span></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!--  -->
+        <script src="/script.js"></script>
+</body>
+
+</html>
